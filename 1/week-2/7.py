@@ -1,42 +1,43 @@
-items = input().split()
+a = input().split()
 
 
-names = []
-counts = []
+n = []
+c = []
 
-for x in items:
-    if x in names:
-        counts[names.index(x)] += 1
+for x in a:
+    if x in n:
+        c[n.index(x)] += 1
     else:
-        names.append(x)
-        counts.append(1)
+        n.append(x)
+        c.append(1)
 
 
-print("Purchase frequency:")
-for i in range(len(names)):
-    print(names[i], ":", counts[i])
+print("Frequency:")
+for i in range(len(n)):
+    print(n[i], ":", c[i])
 
 
-max_count = max(counts)
-for i in range(len(names)):
-    if counts[i] == max_count:
-        print("Most popular item:", names[i])
+max_count = max(c)
+for i in range(len(n)):
+    if c[i] == max_count:
+        print("Most popular item:", n[i])
         break
 
 
-print("Purchased once:", end=" ")
-for i in range(len(names)):
-    if counts[i] == 1:
-        print(names[i], end=" ")
+print("1 sold:", end=" ")
+for i in range(len(n)):
+    if c[i] == 1:
+        print(n[i], end=" ")
 print()
 
 
-for _ in range(len(names)):
+for _ in range(len(n)):
     max_count = -1
     idx = -1
-    for i in range(len(counts)):
-        if counts[i] > max_count:
-            max_count = counts[i]
+    for i in range(len(c)):
+        if c[i] > max_count:
+            max_count = c[i]
             idx = i
-    print(names[idx], counts[idx])
-    counts[idx] = -1  
+    print(n[idx], c[idx])
+    c[idx] = -1  
+
