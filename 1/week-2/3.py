@@ -8,7 +8,7 @@ result = int(s[4:])
 if left == 'x':
     if sign == '+':
         x = result - int(right)
-    else:  # sign == '-'
+    else:  
         x = result + int(right)
 
 elif right == 'x':
@@ -17,7 +17,7 @@ elif right == 'x':
     else:
         x = int(left) - result
 
-else:  # x справа
+else:  
     if sign == '+':
         x = int(left) + int(right)
     else:
