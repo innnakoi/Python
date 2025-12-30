@@ -2,10 +2,16 @@ import math
 
 a, b, c, d, diag = map(float, input("Enter 4 sides and diagonal: ").split())
 
-s1 = (a + b + diag) / 2
-s2 = (c + d + diag) / 2
+def triangle_area(x, y, z):
+    if x + y <= z or x + z <= y or y + z <= x:
+        return 0   
+    s = (x + y + z) / 2
+    return math.sqrt(s * (s - x) * (s - y) * (s - z))
 
-area1 = math.sqrt(s1*(s1-a)*(s1-b)*(s1-diag))
-area2 = math.sqrt(s2*(s2-c)*(s2-d)*(s2-diag))
+area1 = triangle_area(a, b, diag)
+area2 = triangle_area(c, d, diag)
 
-print("Area:", area1 + area2)
+if area1 == 0 or area2 == 0:
+    print("diagonal and sides do not form triangles")
+else:
+    print("Area:", area1 + area2)
