@@ -1,10 +1,10 @@
-items = input().split()
+a = input().split()
 
 
 n = []
 c = []
 
-for x in items:
+for x in a:
     if x in n:
         c[n.index(x)] += 1
     else:
