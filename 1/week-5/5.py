@@ -21,7 +21,7 @@ class BankAccount:
         return self.__balance
 
 
-account = BankAccount("Alice", 1000)
-account.deposit(500)
-account.withdraw(300)
+account = BankAccount("Zarina", 2500)
+account.deposit(400)
+account.withdraw(800)
 print(account.get_balance())

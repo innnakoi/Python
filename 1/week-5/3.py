@@ -16,8 +16,8 @@ class Student(Person):
         return f"Student Name: {self._name}, ID: {self.student_id}"
 
 
-person = Person("John")
-student = Student("Anna", "S123")
+person = Person("Ivan")
+student = Student("Zarina", "1633")
 
 print(person.get_info())
 print(student.get_info())

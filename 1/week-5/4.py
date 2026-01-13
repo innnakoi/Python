@@ -26,7 +26,7 @@ def print_employee_info(employees):
         print(f"Role: {emp.get_role()}, Salary: {emp.get_salary()}")
 
 
-emp1 = Employee(3000)
-emp2 = Manager(5000, 1000)
+emp1 = Employee(5700)
+emp2 = Manager(3900, 1600)
 
 print_employee_info([emp1, emp2])
