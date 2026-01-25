@@ -15,6 +15,10 @@ class Student(Person):
     def get_info(self):
         return f"Student Name: {self._name}, ID: {self.student_id}"
 
+people = [Person("Ivan"), Student("Zarina", "1633")]
+
+for p in people:
+    print(p.get_info())
 
 person = Person("Ivan")
 student = Student("Zarina", "1633")

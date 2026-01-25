@@ -23,5 +23,5 @@ class BankAccount:
 
 account = BankAccount("Zarina", 2500)
 account.deposit(400)
-account.withdraw(800)
+account.withdraw(4000)
 print(account.get_balance())

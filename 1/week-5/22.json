@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Zarina",
+    "age": 19,
+    "grades": [0, 2, 5]
+  },
+  {
+    "name": "Meme",
+    "age": 21,
+    "grades": [88, 89, 90]
+  }
+]

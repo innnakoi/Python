@@ -1,6 +1,6 @@
 Lines: 1
 Words: 93
-Word frequency:
+Frequency: 
 in: 2
 2017: 1
 charles: 2
